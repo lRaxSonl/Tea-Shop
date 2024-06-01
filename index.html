@@ -4,54 +4,198 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
+    <title>Tea-Shop</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        .main-banner {
+            background: url('assets/img/logo/pexels-mykola-osmachko-230477.jpg') no-repeat center center;
+            background-size: cover;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+    </style>
 </head>
 
 <body>
-    <section>
-        <div class="up-1">
-            <div class="container">
-                <div class="row">
-                    <div class="col">Вход | Регистрация</div>
-                    <div class="col">Тел. +372 00000000 | E-post@post.com</div>
-                </div>
+    <!-- Header Section -->
+    <header class="header-1">
+        <div class="container d-flex justify-content-between align-items-center py-2">
+            <div>
+                <a href="#" class="mr-3 text-dark">Вход</a>
+                <a href="#" class="text-dark">Регистрация</a>
+            </div>
+            <div>
+                <span>Тел. +372 00000000 | E-post@post.com</span>
             </div>
         </div>
+    </header>
 
+    <!-- Navigation Section -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <div class="row">
-                <div class="col" style="text-align: center; padding-right: -100px;">
-                    <img src="assets/img/logo/logo1.png" alt="">
-                </div>
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/logo/logo1.png" alt="logo" class="logo-1">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="#" style="color: #6A5A51;"><b>Каталог</b></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" style="color: #6A5A51;"><b>Акции</b></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" style="color: #6A5A51;"><b>О нас</b></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" style="color: #6A5A51;"><b>Контакты</b></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-                <div class="col">
-                    <a href="#" style="text-decoration: none;"><b><p class="up-2">Каталог</p></b></a>
+    <!-- Main Section -->
+    <main class="main-banner d-flex align-items-center">
+        <div class="container text-center">
+            <h1 class="display-4 text-white">Все сорта чая</h1>
+            <a href="#" class="btn btn-primary mt-3">Смотреть</a>
+        </div>
+    </main>
+
+    <!-- Products Section -->
+    <section class="products py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Новинки</h2>
+            <div class="row">
+                <div class="col-md-3 text-center">
+                    <img src="assets\img\products\opera_V0zg9Aaev3-removebg-preview.png" alt="Чайная фигурка Золотая обезьяна" class="img-fluid rounded-circle mb-3">
+                    <h5>Чайная фигурка "Золотая обезьяна"</h5>
+                    <p>16 €</p>
                 </div>
-                <div class="col">
-                    <a href="#" style="text-decoration: none;"><b><p class="up-2">Акции</p></b></a>
+                <div class="col-md-3 text-center">
+                    <img src="assets\img\products\opera_xKrzW3nrJg-removebg-preview.png" alt="Travel tea set 'zen' 125ml" class="img-fluid rounded-circle mb-3">
+                    <h5>Travel tea set "zen" 125ml</h5>
+                    <p>37,80 €</p>
                 </div>
-                <div class="col">
-                    <a href="#" style="text-decoration: none;"><b><p class="up-2" >О нас</p></b></a>
+                <div class="col-md-3 text-center">
+                    <img src="assets\img\products\opera_oZkDXv93V1-removebg-preview.png" alt="Travel tea set 'Mountains' 300ml" class="img-fluid rounded-circle mb-3">
+                    <h5>Travel tea set "Mountains" 300ml</h5>
+                    <p>36,80 €</p>
                 </div>
-                <div class="col">
-                    <a href="#" style="text-decoration: none;"><b><p class="up-2" ><a href="#"></a>Контакты</a></p></b>
+                <div class="col-md-3 text-center">
+                    <img src="assets\img\products\opera_dT79dAt0R6-removebg-preview.png" alt="Travel tea set 'Mountains' 300ml" class="img-fluid rounded-circle mb-3">
+                    <h5>Travel tea set "Mountains" 300ml</h5>
+                    <p>39,60 €</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section>
-        <img src="assets/img/logo/bg1.jpg">
+
+    <!-- Special Offers Section -->
+    <section class="special-offers py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" style="color: #395A1F;"><b>Специальные предложения</b></h2>
+            <div class="row">
+                <div class="col-md-3 text-center">
+                    <img src="assets\img\products\opera_GHpO0XLfaS-removebg-preview.png" alt="Маття Хисуи 100 гр" class="img-fluid rounded-circle mb-3">
+                    <h5>Маття Хисуи 100 гр</h5>
+                    <p class="text-danger">15,75 €</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <img src="assets\img\products\opera_51X1uF5OeS-removebg-preview.png" alt="Шу пуэр 'Старый Товарищ'" class="img-fluid rounded-circle mb-3">
+                    <h5>Шу пуэр "Старый Товарищ"</h5>
+                    <p class="text-danger">38,68 €</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <img src="assets\img\products\opera_4Hzk4pfFJ7-removebg-preview.png" alt="Юннань шу пуэр Organic" class="img-fluid rounded-circle mb-3">
+                    <h5>Юннань шу пуэр Organic</h5>
+                    <p class="text-danger">51,85 €</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <img src="assets\img\products\opera_xrE6ToI9is-removebg-preview.png" alt="Улун Формоза" class="img-fluid rounded-circle mb-3">
+                    <h5>Улун Формоза</h5>
+                    <p class="text-danger">4,17 €</p>
+                </div>
+            </div>
+        </div>
     </section>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+     <!-- Show More Section -->
+     <section class="show-more text-center py-2">
+        <a href="#" class="btn btn-outline-secondary">ПОКАЗАТЬ БОЛЬШЕ</a>
+    </section>
+
+    <!-- Best Sellers Section -->
+    <section class="best-sellers py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" style="color: #395A1F;"><b>Хиты продаж</b></h2>
+            <div class="row">
+                <div class="col-md-3 text-center">
+                    <img src="assets\img\products\opera_GHpO0XLfaS-removebg-preview.png" alt="Маття Хисуй 100 гр" class="img-fluid rounded-circle mb-3">
+                    <h5>Маття Хисуй 100 гр</h5>
+                    <p>15,75 €</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <img src="assets\img\products\opera_51X1uF5OeS-removebg-preview.png" alt="Шу пуэр 'Старый Товарищ'" class="img-fluid rounded-circle mb-3">
+                    <h5>Шу пуэр "Старый Товарищ"</h5>
+                    <p>38,68 €</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <img src="assets\img\products\opera_4Hzk4pfFJ7-removebg-preview.png" alt="Юньнань шу пуэр Organic" class="img-fluid rounded-circle mb-3">
+                    <h5>Юньнань шу пуэр Organic</h5>
+                    <p>51,85 €</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <img src="assets\img\products\opera_xrE6ToI9is-removebg-preview.png" alt="Улун Формоза" class="img-fluid rounded-circle mb-3">
+                    <h5>Улун Формоза</h5>
+                    <p>4,17 €</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Show More Section -->
+    <section class="show-more text-center py-2">
+        <a href="#" class="btn btn-outline-secondary">ПОКАЗАТЬ БОЛЬШЕ</a>
+    </section>
+
+    <!-- Payments Section -->
+    <section class="payments">
+        <div class="container">
+            <h2 class="text-center mb-5" style="color: black;"><b>Способы оплаты</b></h2>
+            <div class="row">
+                <div class="col">
+                    <img src="assets\img\payments\Our_logotype_626px-removebg-preview.png" alt="Swedbank" class="img-fluid rounded-circle mb-3">
+                </div>
+                <div class="col">
+                    <img src="assets\img\payments\seb-bank-removebg-preview.png" alt="Seb Bank" class="img-fluid rounded-circle mb-3">
+                </div>
+                <div class="col">
+                    <img src="assets\img\payments\logo-removebg-preview.png" alt="Coop bank" class="img-fluid rounded-circle mb-3">
+                </div>
+                <div class="col">
+                    <img src="assets\img\payments\pp_h_rgb_logo_tn-removebg-preview.png" alt="PayPal" class="img-fluid rounded-circle mb-3">
+                </div>
+                <div class="col">
+                    <img src="assets\img\payments\MasterCard_Logo.svg-removebg-preview.png" alt="MasterCard" class="img-fluid rounded-circle mb-3">
+                </div>
+            </div>
+    </section>
+
+
+    
+    <section class="contacts">
+        <div class="text-center">Тел. +372 00000000 | E-post@post.com</div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

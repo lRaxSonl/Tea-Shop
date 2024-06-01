@@ -1,15 +1,135 @@
-* {
-    box-sizing: border-box;
+body {
+    font-family: 'Open Sans', sans-serif;
     margin: 0;
-    padding: 0;
 }
 
-.up-1 {
+.header-1 {
     background-color: #D7A480;
+    color: black;
 }
 
-.up-2 {
-    text-align: center;
-    margin-top: 50px;
-    color: #6A5A51;
+header a {
+    color: black;
+    text-decoration: none;
+}
+
+.navbar-brand img {
+    width: 100px;
+    height: 100px;
+}
+
+.main-banner {
+    background: url('assets/img/logo/pexels-mykola-osmachko-230477.jpg') no-repeat center center;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.main-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.main-banner .container {
+    position: relative;
+    z-index: 1;
+}
+
+.main-banner h1 {
+    color: white;
+    font-weight: 300;
+}
+
+.main-banner .btn {
+    background-color: #A67B53;
+    border: none;
+    font-weight: 600;
+}
+
+.products,
+.special-offers,
+.best-sellers {
+    background-color: #F4E7DE;
+}
+
+.products h2,
+.special-offers h2,
+.best-sellers h2 {
+    color: #4B5320;
+}
+
+.products .col-md-3 h5,
+.special-offers .col-md-3 h5,
+.best-sellers .col-md-3 h5 {
+    color: #4B5320;
+}
+
+.products .col-md-3 p,
+.special-offers .col-md-3 p,
+.best-sellers .col-md-3 p {
+    color: #333;
+    font-weight: 600;
+}
+
+.show-more {
+    background-color: #F4E7DE;
+    border-top: 2px solid #DD9467;
+    border-bottom: 2px solid #DD9467;
+}
+
+.show-more .btn {
+    color: #DD9467;
+    font-weight: 600;
+    border: 1px solid #DD9467;
+}
+
+.show-more .btn:hover {
+    background-color: #DD9467;
+    color: white;
+}
+
+.special-offers .col-md-3 p.text-danger,
+.best-sellers .col-md-3 p.text-danger {
+    color: #DD2C00;
+}
+
+.special-offers{
+    background-color: white;
+}
+
+.show-more {
+    background-color: white;
+}
+
+.best-sellers {
+    background-color: white;
+}
+
+.payments {
+    background-color: white;
+}
+
+.payments .col img {
+    width: 170px;
+    height: 100px;
+}
+
+.contacts {
+    background-color: #EEE1D1;
+}
+
+.row h5 {
+    font-family: Arial;
+}
+
+.navbar-nav li {
+    padding-left: 80px;
 }
